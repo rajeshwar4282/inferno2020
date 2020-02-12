@@ -6,7 +6,7 @@ app.get('/', (req, res) => res.send('Hello World!'))
 app.get('/register', (req, res) => res.send('register'))
 app.get('/login', (req, res) => res.send('login'))
 app.get('/home',function(req,res) {
-    res.sendFile(__dirname+'/frontend/html/home.html');
+    res.sendFile(__dirname+'/frontend/index.html');
   });
   var student = {"name" : "Being Zero",
                "college" : "VNRVJIET",
