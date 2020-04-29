@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>
+     <style>
+         html, body { height: 100%; padding: 0; margin: 0; }
+div { width: 50%; height: 50%; float: left; }
+#div1 { background: #fcf6f6; }
+#div2 { background: #fcf6f6; }
+#div3 { background: #fcf6f6; }
+#div4 { background: #fcf6f6; }
+div { width: 50%; height: 50%; float: left; }
+#div5 { background: #fcf6f6; }
+#div6 { background: #fcf6f6; }
+#div7 { background: #fcf6f6; }
+#div8 { background: #fcf6f6; }
+
+.button {
+  background-color: #beb5b5; /* Green */
+  border: none;
+  color: rgba(7, 3, 3, 0.932);
+  padding: 8px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 2px 2px;
+  cursor: pointer;
+}
+.button2{
+    background-color:crimson;
+    border-radius: none;
+    color: #fcf6f6;
+    padding: 2px 8px;
+    border-radius: 30px;
+}
+.input{
+    margin: 0px;
+  padding: 0px;
+}
+.active, .button:hover {
+  background-color:green;
+  color:black;
+}
+     </style>
+    </head>
+<body>
+    <script>
+        var x=1;
+        document.getElementById("demo").innerHTML = x;
+    </script>
+    <div id="div1">
+        <img src="https://images-na.ssl-images-amazon.com/images/I/81GNCqlLOKL._SX425_.jpg" width="300" height="300">
+    </div>
+    <div id="div2">
+        <p>
+         Ashirwaad atta -Whole wheat,10kg Pouch
+        </p>
+        <h4>Rs.399</h4>
+        <p>Pick Sizes:</p>
+        <button class="button" onclick=set1()>10kg<br>Rs.399</button>  &nbsp;&nbsp;  <button class="button" onclick=set2()>5kg<br>Rs.299</button>
+          <p>Quantity:</p>
+          <button onclick=decrement()>-</button><button id="demo"><script>
+            var x=1;
+            amt2=399;
+            document.getElementById("demo").innerHTML = x;
+            function set1(){
+                amt2=399;
+                property.style.backgroundColor = "#FFFFFF";
+            }
+            function set2(){
+                amt2=299;
+            }
+            function increment(){
+              x=x+1;
+              document.getElementById("demo").innerHTML = x;
+            }
+            function decrement(){
+                x=x-1;
+                if(x<0){
+                    x=0;
+                }
+                document.getElementById("demo").innerHTML = x;
+            }
+            function amount(){
+               amt=amt2*x;
+               document.getElementById("demo1").innerHTML = amt;
+            }
+        </script></button><button onclick=increment()>+</button><br><br>
+        <button onclick=amount() class="button2">payable</button><p id="demo1" ></p>
+    </div>
+    <div id="div3">
+        <figure>
+            <img src="https://webfactory.in/wp-content/uploads/2018/07/Masala-Packet.jpg" alt="Trulli" style="width:100%">
+            <figcaption>Red chilli powder,turmeric powder,corionder powder</figcaption>
+          </figure>
+    </div>
+    <div id="div4">
+        <div id="div6">
+            <figure>
+                <img src="https://www.kannammacooks.com/wp-content/uploads/100-percent-whole-grain-whole-wheat-indian-chakki-atta-bread-recipe-1-2.jpg" alt="Trulli" style="width:75%">
+                <figcaption>&nbsp;&nbsp;atta and flour</figcaption>
+              </figure>
+        </div>
+        <div id="div7">
+            <figure>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSPMxD_hfYrN83K-hdL3-f4dIVxTfAh2Si-q_Y70yOU8kCTVc6c&usqp=CAU" alt="Trulli" style="width:80%">
+                <figcaption>&nbsp;&nbsp;Rice and products</figcaption>
+              </figure>
+        </div>
+        <div id="div8">
+            <figure>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSNMbk_dEmACRuCdZ73ZuDzuNqO1Wo7NLsjIuvr_StLh3HaAO3U&usqp=CAU" alt="Trulli" style="width:80%">
+                <figcaption>Dals and pulses<br></figcaption>
+              </figure>
+        </div>
+        <div id="div9">
+            <figure>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQRg6slsL6Rl9svZjybOIflxsP9RRxWvPKzGdTQkZzvnE-P7dAc&usqp=CAU" alt="Trulli" style="width:80%">
+                <figcaption>Oil products</figcaption>
+              </figure>
+        </div>
+    </div>
+</body>
+</html>
